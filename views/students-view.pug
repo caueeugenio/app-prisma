@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  table.table
+    thead
+      tr
+        th Nome
+        th Email
+        th Nota
+    tbody
+      each student in allStudents
+        tr
+          td= student.name
+          td= student.email
+          td= student.grade
