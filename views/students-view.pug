@@ -1,15 +1,19 @@
 extends layout
 
 block content
+  h1.text-center= 'List of Students'
+  hr
   table.table
     thead
       tr
-        th Nome
-        th Email
-        th Nota
+        th Name
+        th E-mail
+        th Grade
     tbody
       each student in allStudents
         tr
           td= student.name
           td= student.email
           td= student.grade
+  div 
+    button.btn.btn-primary(onclick="window.location.href='/register'") Register new student

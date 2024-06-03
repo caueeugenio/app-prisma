@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1.text-center= 'Register of Students'
+  hr
+  div.card.container
+    form.form(action='/register' method='POST')
+      div.form-group.col-sm-2.pt-2   
+        label(for="name") Name: 
+        input.form-control(type="text", name="name", id="name",required)
+      div.form-group.col-sm-2.pt-2      
+        label(for="email") E-mail: 
+        input.form-control(type="email", name="email", id="email",required)
+      div.form-group.col-sm-2.pt-2     
+        label(for="grade") Grade: 
+        input.form-control(type="grade", name="grade", id="grade",required)
+      div.form-group.col-sm-2.pt-2.pb-2      
+        button.btn.btn-primary(type="submit") Register
+      div.form-group.col-sm-2.pt-2.pb-2  
+        button.btn.btn-secondary(onclick="window.location.href='/'") Back
+    
