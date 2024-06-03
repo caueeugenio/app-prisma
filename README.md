@@ -29,11 +29,7 @@ Install docker and run this command
 ```bash
   docker compose up
 ```
-Be sure that create data base on your DBMS
-
-```bash
-  npm run start
-```
+⚠️ Be sure that create data base on your DBMS
 
 Run the server
 
